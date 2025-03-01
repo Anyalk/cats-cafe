@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Котяче кафе</title>
+    <link rel="stylesheet" href="./review.css" />
+</head>
+<body>
+
+    <header>
+        <h1>Ласкаво просимо до котячого кафе!</h1>
+    </header>
+
+    <nav>
+        <a href="#about">Про нас</a>
+        <a href="/#menu">Меню</a>
+        <a href="/reviews.html">Відгуки</a>
+        <a href="#cats">Наші котики</a>
+        <a href="#hours">Час роботи</a>
+        <a href="#contact">Контакти</a>
+    </nav>
+
+    <!-- Відгуки Section -->
+    <section id="reviews">
+        <h2>Відгуки наших відвідувачів</h2>
+
+        <div class="review">
+            <img src="https://sud.ua/uploads/news/2020/06/25/6afa568a6d51b040c594d10954701ddf9e2ee248.png" alt="Avatar of Анна Іванова">
+            <div>
+                <p class="author">Анна Іванова:</p>
+                <p class="text">"Неймовірна атмосфера! Котики дуже дружелюбні, а кава смачна. Прийду ще!"</p>
+            </div>
+        </div>
+
+        <div class="review">
+            <img src="https://media.slovoidilo.ua/media/cache/person_thumb_exx/uploads/persons/origin/Po/Poroshenko-Petr-Alekseevich_origin.png" alt="Avatar of Петро Коваленко">
+            <div>
+                <p class="author">Петро Порошенко:</p>
+                <p class="text">"Дуже мило! Справжнє місце для релаксу і відпочинку. Рекомендую!"</p>
+            </div>
+        </div>
+
+        <div class="review">
+            <img src="https://galas.te.ua/wp-content/uploads/2022/05/%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_2022-05-18_154429325.png" alt="Avatar of Марія Ткаченко">
+            <div>
+                <p class="author">Марія Ткаченко:</p>
+                <p class="text">"Прекрасне кафе, де можна не лише насолоджуватися смачними стравами, але й провести час з чудовими котиками."</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+    <h2>Залиште свій відгук</h2>
+    <form action="your-server-endpoint" method="POST">
+        <div class="form-group">
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Ваша електронна пошта:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="rating">Оцінка (1-5):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+        </div>
+        <div class="form-group">
+            <label for="feedback">Ваш відгук:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">Надіслати відгук</button>
+        </div>
+    </form>
+</div>
+
+
+    <footer>
+        <p>&copy; 2024 Котяче кафе. Всі права захищені =3.</p>
+    </footer>
+
+</body>
+</html>
