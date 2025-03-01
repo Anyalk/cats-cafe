@@ -1,0 +1,270 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f9f5; /* світлий зелений фон */
+            margin: 0;
+            padding: 0;
+            color: #4b6f44; /* темно-зелений текст */
+        }
+
+        header {
+            background-color: #a8d5ba; /* ніжний зелений */
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #6cae8e; /* середній зелений */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #3b6f49; /* темніший зелений */
+            border-bottom: 2px solid #a8d5ba;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        li:hover {
+            background-color: #eaf2e6; /* світло-зелений фон при наведенні */
+        }
+
+        li img {
+            max-width: 80px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #a8d5ba;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            color: white;
+        }
+
+        .cta-button {
+            background-color: #6cae8e; /* зелена кнопка */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .cta-button:hover {
+            background-color: #4c8f73; /* темніший зелений при наведенні */
+        }
+
+        .card {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        #menu{
+            display: flex;
+            gap: 20px;
+        }
+        #menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;  /* Light background color */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the unordered list (the two categories) */
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;  /* Spacing between items */
+}
+
+/* Style for each menu item */
+#menu li {
+    background-color: #fff;  /* White background for items */
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 180px;  /* Fixed width for consistent layout */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect to scale up the item slightly */
+#menu li:hover {
+    transform: scale(1.05);
+}
+
+/* Style for the images inside each item */
+#menu li img {
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+    border-radius:10%;
+    margin-bottom: 10px;
+}
+
+/* Style for the price span */
+#menu li span {
+    font-weight: bold;
+    color: #333;  /* Dark text for contrast */
+    font-size: 1.2em;
+}
+
+/* Add some extra space between the two lists */
+#menu ul + ul {
+    margin-top: 40px;
+}
+   #reviews {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #reviews h2 {
+            text-align: center;
+            font-size: 1.8em;
+        }
+
+        .review {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .review:last-child {
+            border-bottom: none;
+        }
+
+        .review img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px; /* Space between avatar and text */
+        }
+
+        .review .author {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review .text {
+            font-style: italic;
+            color: #555;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            font-size: 16px;
+            color: #333;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+        .form-group textarea {
+            resize: vertical;
+            height: 150px;
+        }
+        .form-group button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-group button:hover {
+            background-color: #45a049;
+        }
